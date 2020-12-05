@@ -1,0 +1,42 @@
+<?php
+
+namespace App\Http\Controllers;
+
+use Illuminate\Http\Request;
+
+class HomeController extends Controller
+{
+    /**
+     * Create a new controller instance.
+     *
+     * @return void
+     */
+   
+
+    /**
+     * Show the application dashboard.
+     *
+     * @return \Illuminate\Contracts\Support\Renderable
+     */
+     public function index()
+    {
+        return view('welcome');
+    }
+    public function contact()
+    {
+        return view('user.contact');
+    }
+    public function about()
+    {
+        return view('user.about');
+    }
+    public function account()
+    {
+        return view('user.my-account');
+    }
+      public function all_endroits()
+    {
+        return view('user.all-endroits');
+    }
+    
+}
